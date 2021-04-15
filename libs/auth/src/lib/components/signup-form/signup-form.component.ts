@@ -17,7 +17,7 @@ export class SignupFormComponent implements OnDestroy {
     password: ['', Validators.required],
   });
 
-  $loading = this.store.pipe(select(selectLoading), tap(console.log));
+  $loading = this.store.pipe(select(selectLoading));
   constructor(private fb: FormBuilder, private store: Store<State>) {}
 
   onregister() {

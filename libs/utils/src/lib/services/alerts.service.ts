@@ -71,19 +71,6 @@ export class AlertsService {
       showConfirmButton: true,
     }).catch((err) => console.log(err));
   }
-  /**
-   * @param  {string} message
-   * @returns void
-   */
-  MessageWarnning(message: string, titleAlert: string): void {
-    sweetalert2({
-      type: 'warning',
-      title: titleAlert,
-      text: message,
-      timer: 2000,
-      showConfirmButton: false,
-    }).catch((err) => console.log(err));
-  }
 
   /**
    * @param  {string} text

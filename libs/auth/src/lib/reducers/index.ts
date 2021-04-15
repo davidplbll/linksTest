@@ -11,11 +11,7 @@ export const selectUser = createSelector(
 );
 export const selectLoading = createSelector(
   selectFeature,
-  (state: userReducer.State) => {
-    console.log('state ', state);
-
-    return state.loading;
-  }
+  (state: userReducer.State) => state.loading
 );
 export const selectError = createSelector(
   selectFeature,

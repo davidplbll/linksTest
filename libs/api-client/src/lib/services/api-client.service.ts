@@ -47,8 +47,6 @@ export class ApiClientService {
    * @memberof ApiClientService
    */
   post<T>(path: string, data: any, error?: string): Observable<T> {
-    console.log('path ', path);
-    console.log('this.environ.environment ', this.environ.environment);
     return this.http
       .post<any>(
         `${this.environ.environment?.urlApi}/${path}`,

@@ -65,7 +65,6 @@ export class UserEffects {
       this.actions$.pipe(
         ofType(UserActions.LoginSuccess),
         tap((action: any) => {
-          console.log('action ', action);
           localStorage.setItem('token-acces', action.token);
           this.router.navigate(['']);
         })

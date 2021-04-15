@@ -16,12 +16,6 @@ export class ErrorControlService {
             .replace(/[\r ]/g, '')
             .split(',');
           data.pop();
-
-          console.log(
-            "`${data.join(',')}${data[0][0] === '[' ? ']' : ''}` ",
-            `${data.join(',')}${data[0][0] === '[' ? ']' : '}'}`
-          );
-          console.log('data[0] ', data[0]);
           const newreponse: any = JSON.parse(
             `${data.join(',')}${data[0][0] === '[' ? ']' : '}'}`
           );
