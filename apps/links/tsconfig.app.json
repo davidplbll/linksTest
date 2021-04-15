@@ -2,7 +2,16 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
-    "types": []
+    "types": [],
+    "paths": {
+      "@mo-links/ui": ["libs/ui/src/index.ts"],
+      "@mo-links/auth": ["libs/auth/src/index.ts"],
+      "@mo-links/auth/*": ["libs/auth/src/*"],
+      "@mo-links/utils": ["libs/utils/src/index.ts"],
+      "@mo-links/api-client": ["libs/api-client/src/index.ts"],
+      "@mo-links/dashboard": ["libs/dashboard/src/index.ts"],
+      "@mo-links/url": ["libs/url/src/index.ts"]
+    }
   },
   "files": ["src/main.ts", "src/polyfills.ts"]
 }

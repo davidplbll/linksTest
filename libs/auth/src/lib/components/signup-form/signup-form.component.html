@@ -1,0 +1,72 @@
+<form [formGroup]="userform" (ngSubmit)="userform.valid && onregister()">
+  <label for="name">Full name</label>
+  <input
+    #name
+    type="email"
+    required
+    formControlName="name"
+    class="col-12 form-control"
+  />
+
+  <div
+    *ngIf="
+      userform.controls['name'].invalid &&
+      (userform.controls['name'].dirty || userform.controls['name'].touched)
+    "
+    class="alert"
+  >
+    <h6 *ngIf="userform.controls['name'].errors.required">
+      Please enter full name
+    </h6>
+  </div>
+  <label for="password">Your Email</label>
+  <input
+    #email
+    type="email"
+    required
+    formControlName="email"
+    class="col-12 form-control"
+  />
+  <div
+    *ngIf="
+      userform.controls['email'].invalid &&
+      (userform.controls['email'].dirty || userform.controls['email'].touched)
+    "
+    class="alert"
+  >
+    <h6 *ngIf="userform.controls['email'].errors.required">
+      Please enter email
+    </h6>
+  </div>
+  <label for="password">Password</label>
+  <input
+    #password
+    type="password"
+    required
+    formControlName="password"
+    class="col-12 form-control"
+  />
+  <div
+    *ngIf="
+      userform.controls['password'].invalid &&
+      (userform.controls['password'].dirty ||
+        userform.controls['password'].touched)
+    "
+    class="alert"
+  >
+    <h6 *ngIf="userform.controls['password'].errors.required">
+      Please enter password
+    </h6>
+  </div>
+  <div class="buttons">
+    <button class="btn btn-primary" [disabled]="!userform.valid" type="submit">
+      SIGNUP
+    </button>
+  </div>
+  <div class="terms">
+    <div>
+      By Creating account You agree to the <a>Terms of use</a> and
+      <a>Privacy Polycy</a>
+    </div>
+  </div>
+</form>

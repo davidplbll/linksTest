@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mo-links/ui": ["libs/ui/src/index.ts"],
+      "@mo-links/auth": ["libs/auth/src/index.ts"],
+      "@mo-links/auth/*": ["libs/auth/src/*"],
+      "@mo-links/utils": ["libs/utils/src/index.ts"],
+      "@mo-links/utils/*": ["libs/utils/src/*"],
+      "@mo-links/api-client": ["libs/api-client/src/index.ts"],
+      "@mo-links/dashboard": ["libs/dashboard/src/index.ts"],
+      "@mo-links/url": ["libs/url/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

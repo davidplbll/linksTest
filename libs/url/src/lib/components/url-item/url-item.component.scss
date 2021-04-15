@@ -1,0 +1,33 @@
+.container-form {
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 30px rgba(199, 199, 199, 0.55);
+  h3 {
+    font-weight: 600;
+    color: #008df3;
+    font-size: 25px;
+    a {
+      text-decoration: none;
+    }
+  }
+  p {
+    letter-spacing: 0.25;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .icon-delete {
+    float: right;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    button {
+      color: #ff485a;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      border: none;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

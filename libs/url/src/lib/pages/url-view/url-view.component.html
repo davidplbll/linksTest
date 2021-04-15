@@ -1,0 +1,7 @@
+<mo-links-url-form></mo-links-url-form>
+<br />
+<mo-links-url-item
+  *ngFor="let url of urlList$ | async"
+  [url]="url"
+  (deleteUrl)="deleteUrl($event)"
+></mo-links-url-item>

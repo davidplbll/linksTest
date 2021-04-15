@@ -1,0 +1,19 @@
+form {
+  margin-bottom: 20px;
+  .terms {
+    margin-top: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      font-size: 12px;
+      width: 264px;
+      font-weight: 500;
+      a {
+        color: #6eb3ff;
+        cursor: pointer;
+      }
+    }
+  }
+}
